@@ -1957,7 +1957,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #2b3890;
+			background-color: #f57f22;
 			color: #ffffff !important;
 			box-shadow: none;
 		}
@@ -1975,7 +1975,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #7ec3ee;
+				background-color: #f57f22;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -3783,4 +3783,5 @@ input, select, textarea {
 			}
 
 		}
+
 
