@@ -1,8 +1,8 @@
 /* Custom CSS Styles */
 :root {
-    --primary-blue: #485E99;
+    --primary-blue: #2b3890;
     --secondary-blue: #63A7DD;
-    --accent-green: #4C6971;
+    --accent-green: #f57f221;
 }
 
 body {
@@ -142,3 +142,4 @@ body {
     .header h2 { font-size: 2.5rem; }
     .header p { font-size: 1.25rem; }
 }
+
