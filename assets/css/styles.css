@@ -1,12 +1,12 @@
 /* Custom CSS Styles */
 :root {
     --primary-blue: #2b3890;
-    --secondary-blue: #63A7DD;
-    --accent-green: #f57f221;
+    --secondary-blue: #f57f22;
+    --accent-green: #f57f22;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
     background-color: #ffffff;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .whatsapp-btn {
-    background-color: #599CD6;
+    background-color: #f57f22;
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 9999px;
@@ -109,12 +109,12 @@ body {
 }
 
 .whatsapp-btn:hover {
-    background-color: #10B981;
+    background-color: #f57f22;
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #63A7DD;
+    background-color: #2b3890;
     color: white;
     padding: 2rem 0;
 }
@@ -142,4 +142,5 @@ body {
     .header h2 { font-size: 2.5rem; }
     .header p { font-size: 1.25rem; }
 }
+
 
