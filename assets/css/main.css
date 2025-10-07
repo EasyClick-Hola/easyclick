@@ -1958,8 +1958,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #2b3890;
-			color: #2b3890 !important;
+			background-color: #f57f22;
+			color: #f57f22 !important;
 			box-shadow: none;
 		}
 
@@ -3784,6 +3784,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
