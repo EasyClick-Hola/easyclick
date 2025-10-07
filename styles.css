@@ -1,8 +1,8 @@
 /* Custom CSS Styles */
 :root {
-    --primary-blue: #312783;
-    --secondary-blue: #184E9D;
-    --accent-green: #0C777B;
+    --primary-blue: #f57f22;
+    --secondary-blue: #2b3890;
+    --accent-green: #2b3890;
 }
 
 body {
@@ -99,7 +99,7 @@ body {
 }
 
 .whatsapp-btn {
-    background-color: #0C777B;
+    background-color: #2b3890;
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 9999px;
