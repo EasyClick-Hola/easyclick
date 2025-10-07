@@ -207,6 +207,9 @@ input[type="button"]:hover,
 }
 
 /* Footer Styles */
+footer {
+  font-size: 9px;   /* Cambiá a 16px o el tamaño que quieras */
+}
 .footer,
 #footer {
     background-color: #0C777B;
