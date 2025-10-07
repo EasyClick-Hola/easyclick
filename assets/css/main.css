@@ -1,6 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
-
+@import 'https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap';
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
@@ -3783,5 +3782,6 @@ input, select, textarea {
 			}
 
 		}
+
 
 
