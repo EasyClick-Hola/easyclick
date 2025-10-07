@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #485E99;
+		background-color: #2b3890;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #2b3890 15%, #485E99 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #2b3890 15%, #485E99 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #2b3890 15%, #485E99 85%);
@@ -1966,7 +1966,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #9acff2;
+				background-color: #f57f22;
 			}
 
 			input[type="submit"].primary:active,
@@ -3782,6 +3782,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
