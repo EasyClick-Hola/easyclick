@@ -104,7 +104,27 @@ a.button.primary:hover {
     color: white !important;
     box-shadow: 0 4px 8px rgba(245, 127, 34, 0.4) !important;
 }
+	
+/* Forzar texto blanco en botones - todas las variantes */
+.button, .button *,
+button, button *,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button.primary, .button.primary *,
+a.button, a.button * {
+    color: white !important;
+    text-shadow: none !important;
+}
 
+/* Asegurar hover también blanco */
+.button:hover, .button:hover *,
+button:hover, button:hover *,
+.button.primary:hover, .button.primary:hover *,
+a.button:hover, a.button:hover * {
+    color: white !important;
+}
+	
 /* Main section tipografía blanca */
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6,
 #main p, #main span, #main div, #main li, #main a,
