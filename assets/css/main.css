@@ -3323,7 +3323,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				display: block;
 			}
 
 				#nav + #main {
@@ -3336,12 +3336,12 @@ input, select, textarea {
 
 	#main {
 		background-color: #ffffff;
-		color: #636363;
+		color: #2b38903;
 		border-radius: 0.25em;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #2b3890;
 		}
 
 		#main a:hover {
@@ -3804,6 +3804,7 @@ input, select, textarea {
 			#wrapper {
 				max-width: 100%;
 			}
+
 
 
 
