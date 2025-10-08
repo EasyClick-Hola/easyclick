@@ -214,5 +214,26 @@ superior. Ya sea que necesites conexión para tu hogar o negocio, en EASY CLICK 
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
+		<script>
+  // Control del panel móvil
+  const toggle = document.querySelector('.navPanelToggle');
+  const navPanel = document.querySelector('#navPanel');
+  const body = document.body;
+
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    navPanel.classList.toggle('active');
+    body.classList.toggle('navPanel-visible');
+  });
+
+  // Cerrar panel al hacer clic en un enlace
+  document.querySelectorAll('#navPanel a').forEach(link => {
+    link.addEventListener('click', () => {
+      navPanel.classList.remove('active');
+      body.classList.remove('navPanel-visible');
+    });
+  });
+</script>
+
 	</body>
 </html>
