@@ -2041,7 +2041,7 @@ input, select, textarea {
 		}
 
 		select::-ms-expand {
-			display: none;
+			display: block;;
 		}
 
 	input[type="text"],
@@ -2241,7 +2241,7 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: none;
+			display: block;;
 		}
 
 		.icon:before {
@@ -2693,7 +2693,7 @@ input, select, textarea {
 			}
 
 				header.major p br {
-					display: none;
+					display: block;;
 				}
 
 		footer.major {
@@ -3161,7 +3161,7 @@ input, select, textarea {
 				}
 
 					#header p br {
-						display: none;
+						display: block;;
 					}
 
 				#header.alt {
@@ -3323,7 +3323,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				display: block;;
 			}
 
 				#nav + #main {
@@ -3806,6 +3806,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
