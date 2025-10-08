@@ -3683,7 +3683,7 @@ input, select, textarea {
 /* Footer */
 /* Footer Styles */
 #footer {
-    font-size: 10px !important;
+    font-size: 11px !important;
     color: #c7c8ca !important;
 }
 
@@ -3692,7 +3692,7 @@ input, select, textarea {
 #footer dd,
 #footer dt,
 #footer h2 {
-    font-size: 10px !important;
+    font-size: 11px !important;
     color: #c7c8ca !important;
 }
 
@@ -3806,4 +3806,5 @@ input, select, textarea {
 			}
 
 		}
+
 
