@@ -83,13 +83,11 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) {
+  #nav {
+    display: block;
+  }
 
-		html, body {
-			min-width: 320px;
-		}
-
-	}
 
 	html {
 		box-sizing: border-box;
@@ -132,27 +130,11 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
-		@media screen and (max-width: 1680px) {
-
-			body, input, select, textarea {
-				font-size: 14pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
+@media screen and (max-width: 736px) {
+  #nav {
+    display: block;
+  }
+}
 
 		}
 
@@ -3806,6 +3788,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
