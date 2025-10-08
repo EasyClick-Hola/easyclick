@@ -38,9 +38,6 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="https://github.com/EasyClick-Hola/easyclick/blob/main/images/logo%20easy%20click%20tipo%20blanco.png?raw=true" alt="Easy click logo" /></span>
-<!-- Botón menú móvil -->
-<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
 						</header>
 
 
@@ -189,19 +186,6 @@ superior. Ya sea que necesites conexión para tu hogar o negocio, en EASY CLICK 
 						</section>
 					</footer>
 
-				<!-- Nav Panel (para móviles) -->
-<div id="navPanel">
-  <nav>
-    <ul>
-      <li><a href="#intro">Quiénes somos</a></li>
-      <li><a href="#first">Planes Solo Internet</a></li>
-      <li><a href="#internet-tv">Internet y Televisión</a></li>
-      <li><a href="#second">Áreas de cobertura</a></li>
-    </ul>
-  </nav>
-</div>
-
-
 			</div>
 		
 		<!-- Scripts -->
@@ -213,27 +197,6 @@ superior. Ya sea que necesites conexión para tu hogar o negocio, en EASY CLICK 
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-
-		<script>
-  // Control del panel móvil
-  const toggle = document.querySelector('.navPanelToggle');
-  const navPanel = document.querySelector('#navPanel');
-  const body = document.body;
-
-  toggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    navPanel.classList.toggle('active');
-    body.classList.toggle('navPanel-visible');
-  });
-
-  // Cerrar panel al hacer clic en un enlace
-  document.querySelectorAll('#navPanel a').forEach(link => {
-    link.addEventListener('click', () => {
-      navPanel.classList.remove('active');
-      body.classList.remove('navPanel-visible');
-    });
-  });
-</script>
 
 	</body>
 </html>
