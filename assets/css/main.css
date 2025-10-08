@@ -120,9 +120,11 @@ input, select, textarea {
 
 /* Type */
 
+/* Type */
+
 	body {
 		background-color: #ffffff;
-		color: #d3d3d3;
+		color: #d3d3d3;  /* ← CAMBIADO */
 	}
 
 	body, input, select, textarea {
@@ -152,6 +154,7 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 11pt;
+				
 			}
 
 		}
@@ -3816,6 +3819,7 @@ strong, b {
 			#wrapper {
 				max-width: 100%;
 			}
+
 
 
 
