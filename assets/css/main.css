@@ -3663,40 +3663,83 @@ input, select, textarea {
 		}
 
 /* Footer */
-/* ================================
-   Footer Styles
-==================================*/
 
+
+/* Footer Styles */
 #footer {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 3em 1em;
-  color: #777;
-  font-size: 0.95rem; /* 🔹 cambia este valor según el tamaño que quieras */
-  line-height: 1.6;
+    font-size: 9px !important;
+    color: #c7c8ca !important;
 }
 
-#footer p {
-  margin: 0.5em 0 0;
-  font-size: 0.9rem; /* 🔹 texto de copyright */
-  color: #666;
+#footer section,
+#footer p,
+#footer dd,
+#footer dt,
+#footer h2 {
+    font-size: 9px !important;
+    color: #c7c8ca !important;
 }
 
-#footer .icons {
-  margin-bottom: 1em;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 
-#footer .icons a {
-  color: #f57f22; /* 🔹 color de los íconos (naranja) */
-  font-size: 1.4em; /* 🔹 tamaño de los íconos */
-  margin: 0 0.4em;
-  transition: color 0.3s ease;
-}
+	#footer {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding: 5em 5em 3em 5em ;
+		width: calc(100% + 2em);
+		margin: 0 0 3em -2em;
+	}
 
-#footer .icons a:hover {
-  color: #ff9d4c; /* tono más claro al pasar el mouse */
-}
+		#footer > * {
+			width: calc(50% - 2em);
+			margin-left: 2em;
+		}
 
+		#footer .copyright {
+			width: 100%;
+			margin: 2.5em 0 2em 0;
+			font-size: 0.8em;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#footer {
+				padding: 4em 4em 2em 4em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#footer {
+				padding: 4em 3em 2em 3em ;
+				display: block;
+				margin: 0 0 3em 0;
+				width: 100%;
+			}
+
+				#footer > * {
+					width: 100%;
+					margin-left: 0;
+					margin-bottom: 3em;
+				}
+
+				#footer .copyright {
+					text-align: left;
+				}
 
 
 		@media screen and (max-width: 736px) {
@@ -3746,6 +3789,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
