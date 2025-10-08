@@ -1,9 +1,7 @@
-/* Custom CSS Styles */
+/* Custom CSS Styles - Easy Click */
 :root {
-    --primary-blue: #2b3890;
-    --secondary-blue: #2b3890;
-    --accent-green: #f57f22;
-    --button-color: #f57f22;
+    --primary-orange: #f57f22;
+    --text-gray: #d3d3d3;
 }
 
 /* Global Typography */
@@ -11,22 +9,29 @@ body {
     font-family: 'Nunito Sans', sans-serif !important;
     font-weight: 400;
     scroll-behavior: smooth;
-    background-color: #2b3890;
+    color: var(--text-gray) !important;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span, div, li {
     font-family: 'Nunito Sans', sans-serif !important;
+    color: var(--text-gray) !important;
 }
 
-/* Button Styles - Color universal para todos los botones */
+/* Mantener los strong */
+strong, b {
+    font-weight: 700 !important;
+    color: #ffffff !important;
+}
+
+/* Button Styles - Color naranja universal para todos los botones */
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
 .actions .button {
-    background-color: #f57f22 !important;
-    color: #f57f22 !important;
+    background-color: var(--primary-orange) !important;
+    color: #ffffff !important;
     border: none !important;
     transition: all 0.3s ease;
 }
@@ -37,81 +42,23 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 .actions .button:hover {
-    background-color: #1f2768 !important;
+    background-color: #d66f1e !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(43, 56, 144, 0.3);
+    box-shadow: 0 4px 8px rgba(245, 127, 34, 0.3);
 }
 
-/* Custom Navigation Styles */
-.navbar {
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    background-color: rgba(97, 39, 115, 0.9);
-    padding: 1rem 0;
+/* Button Primary */
+.button.primary,
+button.primary,
+input[type="submit"].primary {
+    background-color: var(--primary-orange) !important;
+    color: #ffffff !important;
 }
 
-.nav-link {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: white;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-/* Header Animation */
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.header {
-    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue), #2b3890);
-    background-size: 200% 200%;
-    animation: gradientShift 10s ease infinite;
-    padding: 5rem 1rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-}
-
-/* Service Card Hover Effects */
-.service-card {
-    background-color: white;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-    transform: translateY(0);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.service-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+.button.primary:hover,
+button.primary:hover,
+input[type="submit"].primary:hover {
+    background-color: #d66f1e !important;
 }
 
 /* Five Columns Layout for Plans */
@@ -135,7 +82,12 @@ input[type="button"]:hover,
 
 .features.five-columns li:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(43, 56, 144, 0.2);
+    box-shadow: 0 8px 20px rgba(245, 127, 34, 0.2);
+}
+
+.features.five-columns li h3,
+.features.five-columns li p {
+    color: #636363 !important;
 }
 
 /* Custom Icons for Plans */
@@ -146,15 +98,55 @@ input[type="button"]:hover,
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #2b3890, #184E9D);
+    background: var(--primary-orange);
     color: white;
     font-size: 2rem;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 15px rgba(43, 56, 144, 0.3);
+    box-shadow: 0 4px 15px rgba(245, 127, 34, 0.3);
 }
 
 .icon-custom i {
-    color: white;
+    color: white !important;
+}
+
+/* Spotlight Image Border */
+.spotlight .image img {
+    border: 1.5px solid var(--primary-orange) !important;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(245, 127, 34, 0.4);
+}
+
+.spotlight .image {
+    border-color: var(--primary-orange) !important;
+}
+
+/* Footer Styles - Tamaño 11px */
+#footer {
+    font-size: 11px !important;
+}
+
+#footer section,
+#footer p,
+#footer dd,
+#footer dt,
+#footer h2,
+#footer a {
+    font-size: 11px !important;
+    color: var(--text-gray) !important;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* Internet y Television Section */
+#internet-tv {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
 }
 
 /* Responsive Design for Plans */
@@ -176,80 +168,3 @@ input[type="button"]:hover,
         gap: 1.5rem;
     }
 }
-
-/* Subtle Parallax Effect */
-.parallax-bg {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* WhatsApp Button Pulse */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.whatsapp-btn {
-    background-color: #f57f22 !important;
-    color: white;
-    padding: 0.75rem 2rem;
-    border-radius: 9999px;
-    display: inline-flex;
-    align-items: center;
-    animation: pulse 2s infinite;
-}
-
-.whatsapp-btn:hover {
-    background-color: #f57f22 !important;
-}
-
-/* Footer Styles */
-#footer {
-    font-size: 8px !important;
-    color: #c7c8ca !important;
-}
-
-#footer section,
-#footer p,
-#footer dd,
-#footer dt,
-#footer h2 {
-    font-size: 8px !important;
-    color: #c7c8ca !important;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-}
-
-.company-info {
-    font-size: 0.5rem;
-    opacity: 0.9;
-    line-height: 1.5;
-}
-
-.company-info strong {
-    color: rgba(255,255,255,0.9);
-}
-
-/* Responsive Typography */
-@media (max-width: 640px) {
-    .header h2 { font-size: 2.5rem; }
-    .header p { font-size: 1.25rem; }
-}
-
-/* Additional Plan Section Spacing */
-#internet-tv {
-    background-color: #f8f9fa;
-    padding: 4rem 0;
-}
-
-}
-
