@@ -208,12 +208,12 @@ input[type="button"]:hover,
 
 /* Footer Styles */
 footer {
-  font-size: 9px;   /* Cambiá a 16px o el tamaño que quieras */
+  font-size: 8px;  
 }
 .footer,
 #footer {
     background-color: #0C777B;
-    color: white;
+    color: #c7c8ca;
     padding: 2rem 0;
 }
 
