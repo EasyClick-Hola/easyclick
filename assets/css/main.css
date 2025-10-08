@@ -3805,6 +3805,17 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
-		}
+/* ===== Ajuste de tamaño del menú móvil ===== */
+#menu ul li a {
+  font-size: 1rem; /* cambia a 1.2rem o 0.9rem según prefieras */
+}
+
+/* Para pantallas pequeñas */
+@media screen and (max-width: 736px) {
+  #menu ul li a {
+    font-size: 1.1rem;
+  }
+
+
 
 
