@@ -127,8 +127,8 @@ input, select, textarea {
 		color: #d3d3d3;  /* ← CAMBIADO */
 	}
 
-	body, input, select, textarea {
-		font-family: "Nunito", sans-serif;
+body, input, select, textarea {
+    font-family: "Nunito Sans", sans-serif;
 		font-size: 14pt;
 		font-weight: 400;
 		line-height: 1.65;
@@ -3338,8 +3338,9 @@ strong, b {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #2b3890;
+#main {
+    background-color: #ffffff;
+    color: #636363;  /* ← Color gris oscuro para leer en fondo blanco */
 		border-radius: 0.25em;
 	}
 
@@ -3359,6 +3360,15 @@ strong, b {
 			color: #636363;
 		}
 
+		
+#main p {
+    color: #636363;}
+		
+
+#main strong, #main b {
+    color: #2b3890;
+    font-weight: 700;
+}
 		#main blockquote {
 			border-left-color: #dddddd;
 		}
@@ -3819,6 +3829,7 @@ strong, b {
 			#wrapper {
 				max-width: 100%;
 			}
+
 
 
 
