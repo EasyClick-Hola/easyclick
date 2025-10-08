@@ -3387,11 +3387,11 @@ strong, b {
 		}
 
 		#main a:hover {
-			color: #f57f22;
+			color: #ffffff;
 		}
 
 		#main strong, #main b {
-			color: #f57f22;
+			color: #ffffff;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
@@ -3867,6 +3867,7 @@ strong, b {
 			#wrapper {
 				max-width: 100%;
 			}
+
 
 
 
