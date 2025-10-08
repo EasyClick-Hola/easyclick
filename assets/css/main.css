@@ -28,7 +28,7 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: none;}
 
 body {
 	line-height: 1;
@@ -85,7 +85,7 @@ input, select, textarea {
 
 @media screen and (max-width: 736px) {
   #nav {
-    display: block;
+    display: none;
   }
 
 
@@ -132,7 +132,7 @@ input, select, textarea {
 
 @media screen and (max-width: 736px) {
   #nav {
-    display: block;
+    display: none;
   }
 }
 
@@ -257,7 +257,7 @@ input, select, textarea {
 	}
 
 		pre code {
-			display: block;
+			display: none;
 			line-height: 1.75;
 			padding: 1em 1.5em;
 			overflow-x: auto;
@@ -1976,7 +1976,7 @@ input, select, textarea {
 	}
 
 	label {
-		display: block;
+		display: none;
 		font-size: 0.9em;
 		font-weight: 400;
 		margin: 0 0 1em 0;
@@ -1994,7 +1994,7 @@ input, select, textarea {
 		border-radius: 8px;
 		border: solid 1px;
 		color: inherit;
-		display: block;
+		display: none;
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
@@ -2023,7 +2023,7 @@ input, select, textarea {
 		}
 
 		select::-ms-expand {
-			display: block;;
+			display: none;;
 		}
 
 	input[type="text"],
@@ -2043,7 +2043,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		display: block;
+		display: none;
 		float: left;
 		margin-right: -2em;
 		opacity: 0;
@@ -2223,7 +2223,7 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: block;;
+			display: none;;
 		}
 
 		.icon:before {
@@ -2265,7 +2265,7 @@ input, select, textarea {
 		}
 
 			.icon.alt:before {
-				display: block;
+				display: none;
 				font-size: 1.25em;
 				width: 2em;
 				height: 2em;
@@ -2354,7 +2354,7 @@ input, select, textarea {
 
 		.image img {
 			border-radius: 8px;
-			display: block;
+			display: none;
 		}
 
 		.image.left, .image.right {
@@ -2378,7 +2378,7 @@ input, select, textarea {
 		}
 
 		.image.fit {
-			display: block;
+			display: none;
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
@@ -2388,7 +2388,7 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
+			display: none;
 			margin: 0 0 3em 0;
 			width: 100%;
 		}
@@ -2439,7 +2439,7 @@ input, select, textarea {
 	}
 
 		dl dt {
-			display: block;
+			display: none;
 			font-weight: 400;
 			margin: 0 0 1em 0;
 		}
@@ -2449,7 +2449,7 @@ input, select, textarea {
 		}
 
 		dl.alt dt {
-			display: block;
+			display: none;
 			width: 3em;
 			margin: 0;
 			clear: left;
@@ -2462,7 +2462,7 @@ input, select, textarea {
 
 		dl.alt:after {
 			content: '';
-			display: block;
+			display: none;
 			clear: both;
 		}
 
@@ -2628,7 +2628,7 @@ input, select, textarea {
 		}
 
 			header.major h2:after {
-				display: block;
+				display: none;
 				content: '';
 				width: 3.25em;
 				height: 2px;
@@ -2675,7 +2675,7 @@ input, select, textarea {
 			}
 
 				header.major p br {
-					display: block;;
+					display: none;;
 				}
 
 		footer.major {
@@ -2887,7 +2887,7 @@ input, select, textarea {
 			}
 
 			.statistics li strong, .statistics li b {
-				display: block;
+				display: none;
 				font-size: 2em;
 				line-height: 1.1;
 				color: inherit !important;
@@ -2925,7 +2925,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.statistics {
-				display: block;
+				display: none;
 				width: 20em;
 				max-width: 100%;
 				margin: 0 auto 2em auto;
@@ -2989,7 +2989,7 @@ input, select, textarea {
 		}
 
 			.spotlight .image img {
-				display: block;
+				display: none;
 				border-radius: 100%;
 				width: 16em;
 			}
@@ -3097,12 +3097,12 @@ input, select, textarea {
 				-webkit-transition-delay: 0s;
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
-				display: block;
+				display: none;
 				margin: 0 0 1.5em 0;
 			}
 
 				#header.alt .logo img {
-					display: block;
+					display: none;
 					margin: 0 auto;
 					max-width: 75%;
 				}
@@ -3143,7 +3143,7 @@ input, select, textarea {
 				}
 
 					#header p br {
-						display: block;;
+						display: none;;
 					}
 
 				#header.alt {
@@ -3305,7 +3305,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: block;;
+				display: none;;
 			}
 
 				#nav + #main {
@@ -3726,7 +3726,7 @@ input, select, textarea {
 
 			#footer {
 				padding: 4em 3em 2em 3em ;
-				display: block;
+				display: none;
 				margin: 0 0 3em 0;
 				width: 100%;
 			}
@@ -3789,6 +3789,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
