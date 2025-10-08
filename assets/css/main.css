@@ -3805,6 +3805,102 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
+/* MODIFICACIONES PERSONALIZADAS - AGREGAR AL FINAL */
+
+/* Forzar fondo general */
+html, body {
+    background-color: #2b3890 !important;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif !important;
+    color: white !important;
+}
+
+/* Tipografía blanca global */
+h1, h2, h3, h4, h5, h6, p, a, span, div, li, dt, dd {
+    font-family: 'Nunito Sans', sans-serif !important;
+    color: white !important;
+}
+
+strong, b {
+    color: white !important;
+}
+
+/* Wrapper y Main con fondo correcto */
+#wrapper {
+    background-color: transparent !important;
+}
+
+#main {
+    background-color: #2b3890 !important;
+}
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6,
+#main p, #main a, #main span, #main div, #main li {
+    color: white !important;
+}
+
+#main strong, #main b {
+    color: white !important;
+}
+
+/* Botones naranja */
+#main input[type="submit"],
+#main input[type="reset"],
+#main input[type="button"],
+#main button,
+#main .button,
+#main .button.primary,
+#main button.primary,
+#main input[type="submit"].primary,
+#main input[type="reset"].primary,
+#main input[type="button"].primary {
+    background-color: #f57f22 !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+#main input[type="submit"]:hover,
+#main input[type="reset"]:hover,
+#main input[type="button"]:hover,
+#main button:hover,
+#main .button:hover,
+#main .button.primary:hover,
+#main button.primary:hover {
+    background-color: #d66a1a !important;
+}
+
+/* Navegación naranja ancho completo */
+#nav {
+    background-color: #f57f22 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+}
+
+#nav ul li a {
+    color: white !important;
+}
+
+#nav.alt {
+    background-color: rgba(245, 127, 34, 0.95) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Footer tamaño 12px */
+#footer,
+#footer section,
+#footer p,
+#footer dd,
+#footer dt,
+#footer h2,
+#footer a,
+#footer li {
+    font-size: 12px !important;
+    color: white !important;
+}
 
 
 
