@@ -80,7 +80,7 @@ input[type="button"]:hover,
 }
 
 .header {
-    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue), #312783);
+    background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue), #2b3890);
     background-size: 200% 200%;
     animation: gradientShift 10s ease infinite;
     padding: 5rem 1rem;
