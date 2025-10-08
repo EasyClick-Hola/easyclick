@@ -209,7 +209,7 @@ input[type="button"]:hover,
 /* Footer Styles */
 #footer {
     font-size: 8px !important;
-    color: #d3d3d3 !important;
+    color: #c7c8ca !important;
 }
 
 #footer section,
@@ -218,7 +218,7 @@ input[type="button"]:hover,
 #footer dt,
 #footer h2 {
     font-size: 8px !important;
-    color: #d3d3d3 !important;
+    color: #c7c8ca !important;
 }
 
 .footer-content {
