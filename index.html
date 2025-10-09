@@ -150,12 +150,43 @@ footer .actions a * {
    TARJETAS DE PLANES - FORZAR ESTILOS
    ======================================== */
 
+/* ANULAR FLEXBOX DE MAIN.CSS */
+.features {
+    display: grid !important;
+    -webkit-box-orient: unset !important;
+    -webkit-box-direction: unset !important;
+    -ms-flex-direction: unset !important;
+    flex-direction: unset !important;
+    -ms-flex-wrap: unset !important;
+    flex-wrap: unset !important;
+    -webkit-box-pack: unset !important;
+    -ms-flex-pack: unset !important;
+    justify-content: unset !important;
+}
+
+.features li {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+
+.features li:nth-child(1),
+.features li:nth-child(2),
+.features li:nth-child(3),
+.features li:nth-child(4),
+.features li:nth-child(5) {
+    margin-top: 0 !important;
+}
+
 /* Grid de 5 columnas */
 section#first ul.features,
 section#internet-tv ul.features,
 #first ul.features,
 #internet-tv ul.features,
-.main.special ul.features {
+.main.special ul.features,
+ul.features {
     display: grid !important;
     grid-template-columns: repeat(5, 1fr) !important;
     gap: 1.5rem !important;
@@ -163,7 +194,7 @@ section#internet-tv ul.features,
     padding: 0 !important;
     margin: 2rem auto 3rem auto !important;
     width: 100% !important;
-    max-width: 1400px !important;
+    max-width: 1500px !important;
 }
 
 /* Tarjetas individuales - FONDO BLANCO */
@@ -171,7 +202,8 @@ section#first ul.features li,
 section#internet-tv ul.features li,
 #first ul.features li,
 #internet-tv ul.features li,
-.main.special ul.features li {
+.main.special ul.features li,
+ul.features li {
     background-color: white !important;
     background: white !important;
     border-radius: 12px !important;
@@ -185,12 +217,16 @@ section#internet-tv ul.features li,
     justify-content: flex-start !important;
     min-height: 300px !important;
     position: relative !important;
+    grid-column: span 1 !important;
+    width: 100% !important;
+    max-width: none !important;
 }
 
 section#first ul.features li:hover,
 section#internet-tv ul.features li:hover,
 #first ul.features li:hover,
-#internet-tv ul.features li:hover {
+#internet-tv ul.features li:hover,
+ul.features li:hover {
     transform: translateY(-8px) !important;
     box-shadow: 0 8px 20px rgba(43, 56, 144, 0.3) !important;
 }
@@ -200,12 +236,16 @@ section#first ul.features li *,
 section#internet-tv ul.features li *,
 #first ul.features li *,
 #internet-tv ul.features li *,
+ul.features li *,
 section#first ul.features li h3,
 section#internet-tv ul.features li h3,
 section#first ul.features li p,
 section#internet-tv ul.features li p,
 section#first ul.features li strong,
-section#internet-tv ul.features li strong {
+section#internet-tv ul.features li strong,
+ul.features li h3,
+ul.features li p,
+ul.features li strong {
     color: #2b3890 !important;
 }
 
@@ -213,7 +253,8 @@ section#internet-tv ul.features li strong {
 section#first ul.features li h3,
 section#internet-tv ul.features li h3,
 #first ul.features li h3,
-#internet-tv ul.features li h3 {
+#internet-tv ul.features li h3,
+ul.features li h3 {
     font-size: 1.05rem !important;
     margin: 1rem 0 0.5rem 0 !important;
     line-height: 1.4 !important;
@@ -225,7 +266,8 @@ section#internet-tv ul.features li h3,
 section#first ul.features li p,
 section#internet-tv ul.features li p,
 #first ul.features li p,
-#internet-tv ul.features li p {
+#internet-tv ul.features li p,
+ul.features li p {
     font-size: 1.4rem !important;
     font-weight: 700 !important;
     margin: 0.5rem 0 !important;
@@ -237,6 +279,7 @@ section#first ul.features li .icon-custom,
 section#internet-tv ul.features li .icon-custom,
 #first ul.features li .icon-custom,
 #internet-tv ul.features li .icon-custom,
+ul.features li .icon-custom,
 .icon-custom {
     display: inline-flex !important;
     align-items: center !important;
@@ -254,7 +297,8 @@ section#internet-tv ul.features li .icon-custom,
 
 .icon-custom i,
 section#first ul.features li .icon-custom i,
-section#internet-tv ul.features li .icon-custom i {
+section#internet-tv ul.features li .icon-custom i,
+ul.features li .icon-custom i {
     color: white !important;
 }
 
@@ -303,11 +347,24 @@ section#internet-tv.main {
    RESPONSIVE
    ======================================== */
 
+/* Asegurar 5 columnas en pantallas grandes */
+@media screen and (min-width: 981px) {
+    section#first ul.features,
+    section#internet-tv ul.features,
+    #first ul.features,
+    #internet-tv ul.features,
+    ul.features {
+        grid-template-columns: repeat(5, 1fr) !important;
+        display: grid !important;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     section#first ul.features,
     section#internet-tv ul.features,
     #first ul.features,
-    #internet-tv ul.features {
+    #internet-tv ul.features,
+    ul.features {
         grid-template-columns: repeat(5, 1fr) !important;
         gap: 1rem !important;
     }
@@ -317,7 +374,8 @@ section#internet-tv.main {
     section#first ul.features,
     section#internet-tv ul.features,
     #first ul.features,
-    #internet-tv ul.features {
+    #internet-tv ul.features,
+    ul.features {
         grid-template-columns: repeat(3, 1fr) !important;
         gap: 1.5rem !important;
     }
@@ -327,7 +385,8 @@ section#internet-tv.main {
     section#first ul.features,
     section#internet-tv ul.features,
     #first ul.features,
-    #internet-tv ul.features {
+    #internet-tv ul.features,
+    ul.features {
         grid-template-columns: repeat(2, 1fr) !important;
     }
     
@@ -341,7 +400,8 @@ section#internet-tv.main {
     section#first ul.features,
     section#internet-tv ul.features,
     #first ul.features,
-    #internet-tv ul.features {
+    #internet-tv ul.features,
+    ul.features {
         grid-template-columns: 1fr !important;
         gap: 1rem !important;
     }
@@ -349,7 +409,8 @@ section#internet-tv.main {
     section#first ul.features li,
     section#internet-tv ul.features li,
     #first ul.features li,
-    #internet-tv ul.features li {
+    #internet-tv ul.features li,
+    ul.features li {
         padding: 1.5rem 1rem !important;
         min-height: 260px !important;
     }
