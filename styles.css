@@ -58,6 +58,14 @@ input[type="button"].primary:hover {
     box-shadow: 0 4px 8px rgba(245, 127, 34, 0.4) !important;
 }
 
+/* Forzar color naranja en todos los botones dentro de planes */
+.features.five-columns li button,
+.features.five-columns button {
+    background-color: #f57f22 !important;
+    color: white !important;
+    border: none !important;
+}
+
 /* Custom Navigation Styles */
 .navbar {
     transition: all 0.3s ease;
@@ -130,7 +138,16 @@ input[type="button"].primary:hover {
 }
 
 .header::before {
-    /* Espaciado para evitar que el menú tape contenido */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+}
+
+/* Espaciado para evitar que el menú tape contenido */
 #first {
     padding-top: 6rem;
 }
@@ -146,14 +163,6 @@ input[type="button"].primary:hover {
         position: relative;
         z-index: 1;
     }
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
 }
 
 /* Service Card Hover Effects */
@@ -220,6 +229,7 @@ input[type="button"].primary:hover {
 .features.five-columns li h3 {
     margin-top: 1rem;
 }
+
 /* Custom Icons for Plans */
 .icon-custom {
     display: inline-flex;
@@ -262,7 +272,7 @@ input[type="button"].primary:hover {
     .features.five-columns li:nth-child(5) {
         margin: 0;
         justify-self: center;
-
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -280,7 +290,7 @@ input[type="button"].primary:hover {
     #nav {
         width: 100% !important;
         max-width: 100% !important;
-
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -299,6 +309,7 @@ input[type="button"].primary:hover {
     #nav {
         width: 100% !important;
         max-width: 100% !important;
+    }
 }
 
 /* Subtle Parallax Effect */
