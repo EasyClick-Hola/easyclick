@@ -1,458 +1,397 @@
-/* =====================================================
-   EASY CLICK - CSS FINAL CONSOLIDADO
-   Importancia: ¡Este archivo debe cargarse DESPUÉS de main.css!
-   ===================================================== */
-
-/* ==========================================
-   1. RESET Y FONDO GLOBAL
-   ========================================== */
-html, body {
-    background-color: #2b3890 !important;
-    background-image: none !important;
-    margin: 0;
-    padding: 0;
+/* Custom CSS Styles */
+:root {
+    --primary-blue: #2b3890;
+    --secondary-blue: #2b3890;
+    --accent-orange: #f57f22;
+    --button-color: #f57f22;
 }
 
+/* Global Typography */
 body {
     font-family: 'Nunito Sans', sans-serif !important;
-    color: white !important;
-    line-height: 1.65;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    background-color: #2b3890 !important;
 }
 
-/* ==========================================
-   2. TIPOGRAFÍA GLOBAL - BLANCO
-   ========================================== */
-h1, h2, h3, h4, h5, h6, 
-p, span, div, li, a, 
-strong, b, dt, dd, label {
+h1, h2, h3, h4, h5, h6, p, a, span, div, li {
     font-family: 'Nunito Sans', sans-serif !important;
     color: white !important;
 }
 
-/* ==========================================
-   3. ELIMINAR FONDO BLANCO DEL MAIN
-   ========================================== */
-#wrapper {
-    background-color: transparent !important;
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-}
-
-#main {
-    background-color: transparent !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-}
-
-#main > .main {
-    background-color: transparent !important;
-    border-top: none !important;
-}
-
-#main h1, #main h2, #main h3, #main h4, #main h5, #main h6,
-#main p, #main span, #main div, #main li, #main a,
-#main strong, #main b {
+strong, b {
     color: white !important;
 }
 
-/* ==========================================
-   4. NAVEGACIÓN NARANJA - ANCHO COMPLETO
-   ========================================== */
-#nav {
-    background-color: #f57f22 !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    position: relative !important;
-    left: 50% !important;
-    right: 50% !important;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
-    border-radius: 0 !important;
-    padding: 1em 2em !important;
-}
-
-#nav ul {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#nav ul li a {
-    color: white !important;
-    border: none !important;
-    background: transparent !important;
-}
-
-#nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    color: white !important;
-}
-
-#nav ul li a.active {
-    background-color: rgba(255, 255, 255, 0.3) !important;
-    color: white !important;
-    box-shadow: none !important;
-}
-
-#nav.alt {
-    background-color: rgba(245, 127, 34, 0.95) !important;
-    width: 100vw !important;
-    max-width: 100vw !important;
-    position: fixed !important;
-}
-
-/* ==========================================
-   5. BOTONES NARANJA - TODAS LAS VARIANTES
-   ========================================== */
+/* Button Styles - Color universal para todos los botones */
+.button,
+button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-button,
-.button,
-.button.primary,
-a.button,
-a.button.primary,
 .actions .button,
-.actions a.button,
-ul.actions li a,
-.spotlight .actions a,
-footer .actions a {
+.button.primary,
+button.primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary {
     background-color: #f57f22 !important;
     color: white !important;
     border: none !important;
     box-shadow: none !important;
-    font-family: 'Nunito Sans', sans-serif !important;
+    transition: all 0.3s ease;
 }
 
-/* Asegurar texto blanco en TODOS los elementos internos */
-.button *, 
-button *,
-input[type="submit"] *,
-input[type="reset"] *,
-input[type="button"] *,
-.button.primary *, 
-a.button *,
-.actions .button *,
-ul.actions li a *,
-.spotlight .actions a *,
-footer .actions a * {
-    color: white !important;
-}
-
-/* Hover de botones */
+.button:hover,
+button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-button:hover,
-.button:hover,
+.actions .button:hover,
 .button.primary:hover,
-a.button:hover {
+button.primary:hover,
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover {
     background-color: #d66a1a !important;
-    color: white !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(245, 127, 34, 0.4) !important;
 }
 
-/* ==========================================
-   6. TARJETAS DE PLANES - GRID 5 COLUMNAS
-   ========================================== */
+/* Forzar color naranja en todos los botones dentro de planes */
+.features.five-columns li button,
+.features.five-columns button {
+    background-color: #f57f22 !important;
+    color: white !important;
+    border: none !important;
+}
 
-/* ANULAR COMPLETAMENTE EL FLEXBOX DE MAIN.CSS */
-.features {
-    display: grid !important;
-    -webkit-box-orient: unset !important;
-    -webkit-box-direction: unset !important;
-    -webkit-flex-direction: unset !important;
-    -ms-flex-direction: unset !important;
-    flex-direction: unset !important;
-    -webkit-flex-wrap: unset !important;
-    -ms-flex-wrap: unset !important;
-    flex-wrap: unset !important;
-    -webkit-box-pack: unset !important;
-    -ms-flex-pack: unset !important;
-    justify-content: unset !important;
+/* Custom Navigation Styles */
+.navbar {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    background-color: #f57f22 !important;
+    padding: 1rem 0;
+}
+
+/* Navigation Menu */
+#nav {
+    background-color: #f57f22 !important;
     width: 100% !important;
-    max-width: 1500px !important;
-    margin: 2rem auto 3rem auto !important;
-    padding: 0 !important;
-    list-style: none !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
 }
 
-.features li {
-    -webkit-box-flex: 0 !important;
-    -ms-flex: 0 0 auto !important;
-    flex: 0 0 auto !important;
-    width: auto !important;
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-}
-
-/* Grid de 5 columnas */
-section#first ul.features,
-section#internet-tv ul.features,
-#first ul.features,
-#internet-tv ul.features,
-ul.features {
-    display: grid !important;
-    grid-template-columns: repeat(5, 1fr) !important;
-    gap: 1.5rem !important;
-}
-
-/* Tarjetas individuales - FONDO BLANCO */
-section#first ul.features li,
-section#internet-tv ul.features li,
-#first ul.features li,
-#internet-tv ul.features li,
-ul.features li {
-    background-color: white !important;
-    background: white !important;
-    border-radius: 12px !important;
-    padding: 2rem 1.5rem !important;
-    text-align: center !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    min-height: 280px !important;
-}
-
-ul.features li:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 8px 20px rgba(43, 56, 144, 0.3) !important;
-}
-
-/* TEXTO DENTRO DE TARJETAS - OSCURO */
-ul.features li *,
-ul.features li h3,
-ul.features li p,
-ul.features li strong {
-    color: #2b3890 !important;
-}
-
-/* Títulos */
-ul.features li h3 {
-    font-size: 1.05rem !important;
-    margin: 1rem 0 0.5rem 0 !important;
-    line-height: 1.4 !important;
-    font-weight: 700 !important;
-}
-
-/* Precios */
-ul.features li p {
-    font-size: 1.4rem !important;
-    font-weight: 700 !important;
-    margin: 0.5rem 0 !important;
-    color: #f57f22 !important;
-}
-
-/* Iconos SVG */
-.plan-icon {
-    width: 70px !important;
-    height: 70px !important;
-    stroke: #2b3890 !important;
-    stroke-width: 2 !important;
-    fill: none !important;
-    margin: 0 auto 1rem auto !important;
-    display: block !important;
-}
-
-/* ==========================================
-   7. HEADER
-   ========================================== */
-#header {
-    background-color: transparent !important;
-    padding: 5em 2em 1em 2em;
-}
-
-#header h1, 
-#header h2, 
-#header p {
+#nav ul li a {
     color: white !important;
 }
 
-#header .logo img {
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
+#nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-/* ==========================================
-   8. SPOTLIGHT SECTION
-   ========================================== */
-.spotlight .content h2,
-.spotlight .content p,
-.spotlight .content strong {
+#nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+#nav.alt {
+    background-color: rgba(245, 127, 34, 0.95) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
     color: white !important;
+    padding: 0.5rem;
 }
 
-/* ==========================================
-   9. FOOTER
-   ========================================== */
-#footer {
-    background-color: transparent !important;
-    font-size: 12px !important;
-    padding: 3em 2em !important;
-}
-
-#footer,
-#footer section,
-#footer h2,
-#footer p,
-#footer a,
-#footer dt,
-#footer dd,
-#footer li,
-#footer span,
-#footer strong {
-    font-size: 12px !important;
-    color: white !important;
-}
-
-#footer .icons a {
-    color: white !important;
-    border-color: white !important;
-}
-
-#footer .icons a:hover {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-/* ==========================================
-   10. RESPONSIVE
-   ========================================== */
-
-/* Desktop grande */
-@media screen and (min-width: 1681px) {
-    ul.features {
-        grid-template-columns: repeat(5, 1fr) !important;
-        max-width: 1600px !important;
-    }
-}
-
-/* Desktop normal */
-@media screen and (min-width: 981px) and (max-width: 1680px) {
-    ul.features {
-        grid-template-columns: repeat(5, 1fr) !important;
-        gap: 1.5rem !important;
-    }
-}
-
-/* Tablet grande - 3 columnas */
-@media screen and (min-width: 737px) and (max-width: 980px) {
-    ul.features {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 1.5rem !important;
-    }
-    
-    #nav {
-        padding: 1em !important;
-    }
-}
-
-/* Tablet pequeña - 2 columnas */
-@media screen and (min-width: 481px) and (max-width: 736px) {
-    ul.features {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 1rem !important;
-    }
-    
-    ul.features li {
-        padding: 1.5rem 1rem !important;
-        min-height: 250px !important;
-    }
-    
-    #header {
-        padding: 4em 2em 1em 2em !important;
-    }
-}
-
-/* Mobile - 1 columna */
-@media screen and (max-width: 480px) {
-    ul.features {
-        grid-template-columns: 1fr !important;
-        gap: 1rem !important;
-        padding: 0 1rem !important;
-    }
-    
-    ul.features li {
-        padding: 1.5rem 1rem !important;
-        min-height: 240px !important;
-    }
-    
-    #nav {
-        padding: 0.75em 1em !important;
-    }
-    
-    #nav ul {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-    
-    #nav ul li {
-        margin: 0.25em !important;
-    }
-    
-    #nav ul li a {
-        padding: 0.5em 1em !important;
-        font-size: 0.9em !important;
-    }
-    
-    #header {
-        padding: 3em 1.5em 1em 1.5em !important;
-    }
-    
-    #header .logo img {
-        max-width: 200px;
-    }
-}
-
-/* ==========================================
-   11. AJUSTES ESPECÍFICOS DE SECCIONES
-   ========================================== */
-#first,
-#internet-tv,
-#second {
-    background-color: transparent !important;
-    padding: 3em 2em !important;
-}
-
-section.main.special {
-    text-align: center;
-}
-
-header.major h2 {
-    color: white !important;
-    margin-bottom: 1em;
-}
-
-header.major h2:after {
-    background: linear-gradient(90deg, #f57f22, #8cc9f0) !important;
-    display: block;
+.nav-link::after {
     content: '';
-    width: 3.25em;
+    position: absolute;
+    width: 0;
     height: 2px;
-    margin: 0.7em auto 1em auto;
-    border-radius: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
 }
 
-/* ==========================================
-   12. CENTRAR CONTENIDO
-   ========================================== */
-.main {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 2rem;
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Header Animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header {
+    background: #2b3890;
+    padding: 5rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+}
+
+/* Espaciado para evitar que el menú tape contenido */
+#first {
+    padding-top: 6rem;
 }
 
 @media screen and (max-width: 736px) {
-    .main {
-        padding: 0 1rem;
+    #first {
+        padding-top: 8rem;
     }
+    
+    /* Asegurar que la imagen no se superponga al menú */
+    #first .image {
+        margin-top: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/* Service Card Hover Effects */
+.service-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Five Columns Layout for Plans */
+.features.five-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Para centrar los últimos 2 elementos */
+.features.five-columns li:nth-child(4) {
+    grid-column: 1 / 2;
+    justify-self: end;
+    margin-right: 1rem;
+}
+
+.features.five-columns li:nth-child(5) {
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin-left: 1rem;
+}
+
+.features.five-columns li {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features.five-columns li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(43, 56, 144, 0.2);
+}
+
+.features.five-columns li h3,
+.features.five-columns li p {
+    color: #2b3890 !important;
+    text-align: center;
+}
+
+.features.five-columns li h3 {
+    margin-top: 1rem;
+}
+
+/* Custom Icons for Plans */
+.icon-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2b3890, #184E9D);
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(43, 56, 144, 0.3);
+}
+
+.icon-custom i {
+    color: white !important;
+}
+
+/* Estilos para iconos SVG en planes */
+.plan-icon {
+    width: 60px;
+    height: 60px;
+    stroke: #2b3890;
+    stroke-width: 2;
+    margin-bottom: 1rem;
+}
+
+.features.five-columns li .plan-icon {
+    stroke: #2b3890;
+}
+
+/* Responsive Design for Plans */
+@media screen and (max-width: 1280px) {
+    .features.five-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .features.five-columns li:nth-child(4),
+    .features.five-columns li:nth-child(5) {
+        margin: 0;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .features.five-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features.five-columns li:nth-child(4),
+    .features.five-columns li:nth-child(5) {
+        grid-column: auto;
+        margin: 0;
+        justify-self: center;
+    }
+    
+    #nav {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .features.five-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .features.five-columns li:nth-child(4),
+    .features.five-columns li:nth-child(5) {
+        grid-column: 1;
+        margin: 0;
+        justify-self: center;
+    }
+    
+    #nav {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* Subtle Parallax Effect */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* WhatsApp Button Pulse */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp-btn {
+    background-color: #f57f22 !important;
+    color: white !important;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-btn:hover {
+    background-color: #d66a1a !important;
+}
+
+/* Footer Styles */
+#footer {
+    font-size: 12px !important;
+    background-color: #2b3890 !important;
+}
+
+#footer section,
+#footer p,
+#footer dd,
+#footer dt,
+#footer h2,
+#footer a {
+    font-size: 12px !important;
+    color: white !important;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.company-info {
+    font-size: 12px !important;
+    opacity: 0.9;
+    line-height: 1.5;
+    color: white !important;
+}
+
+.company-info strong {
+    color: white !important;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    .header h2 { font-size: 2.5rem; }
+    .header p { font-size: 1.25rem; }
+}
+
+/* Additional Plan Section Spacing */
+#internet-tv {
+    background-color: #2b3890 !important;
+    padding: 4rem 0;
+}
+
+#first {
+    background-color: #2b3890 !important;
+}
+
+#second {
+    background-color: #2b3890 !important;
 }
