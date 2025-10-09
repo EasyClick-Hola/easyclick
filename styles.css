@@ -130,6 +130,23 @@ input[type="button"].primary:hover {
 }
 
 .header::before {
+    /* Espaciado para evitar que el menú tape contenido */
+#first {
+    padding-top: 6rem;
+}
+
+@media screen and (max-width: 736px) {
+    #first {
+        padding-top: 8rem;
+    }
+    
+    /* Asegurar que la imagen no se superponga al menú */
+    #first .image {
+        margin-top: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+{
     content: '';
     position: absolute;
     top: 0;
@@ -157,11 +174,27 @@ input[type="button"].primary:hover {
 /* Five Columns Layout for Plans */
 .features.five-columns {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     list-style: none;
     padding: 0;
     margin: 2rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Para centrar los últimos 2 elementos */
+.features.five-columns li:nth-child(4) {
+    grid-column: 1 / 2;
+    justify-self: end;
+    margin-right: 1rem;
+}
+
+.features.five-columns li:nth-child(5) {
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin-left: 1rem;
 }
 
 .features.five-columns li {
@@ -181,8 +214,12 @@ input[type="button"].primary:hover {
 .features.five-columns li h3,
 .features.five-columns li p {
     color: #2b3890 !important;
+    text-align: center;
 }
 
+.features.five-columns li h3 {
+    margin-top: 1rem;
+}
 /* Custom Icons for Plans */
 .icon-custom {
     display: inline-flex;
@@ -202,11 +239,30 @@ input[type="button"].primary:hover {
     color: white !important;
 }
 
+/* Estilos para iconos SVG en planes */
+.plan-icon {
+    width: 60px;
+    height: 60px;
+    stroke: #2b3890;
+    stroke-width: 2;
+    margin-bottom: 1rem;
+}
+
+.features.five-columns li .plan-icon {
+    stroke: #2b3890;
+}
+
 /* Responsive Design for Plans */
 @media screen and (max-width: 1280px) {
     .features.five-columns {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .features.five-columns li:nth-child(4),
+    .features.five-columns li:nth-child(5) {
+        margin: 0;
+        justify-self: center;
+
 }
 
 @media screen and (max-width: 980px) {
@@ -214,10 +270,17 @@ input[type="button"].primary:hover {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .features.five-columns li:nth-child(4),
+    .features.five-columns li:nth-child(5) {
+        grid-column: auto;
+        margin: 0;
+        justify-self: center;
+    }
+    
     #nav {
         width: 100% !important;
         max-width: 100% !important;
-    }
+
 }
 
 @media screen and (max-width: 736px) {
@@ -226,10 +289,16 @@ input[type="button"].primary:hover {
         gap: 1.5rem;
     }
     
+    .features.five-columns li:nth-child(4),
+    .features.five-columns li:nth-child(5) {
+        grid-column: 1;
+        margin: 0;
+        justify-self: center;
+    }
+    
     #nav {
         width: 100% !important;
         max-width: 100% !important;
-    }
 }
 
 /* Subtle Parallax Effect */
