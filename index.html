@@ -426,7 +426,59 @@ section#internet-tv.main {
         width: 100% !important;
         max-width: 100% !important;
     }
+
+	/* FORZAR GRID Y ELIMINAR FLEXBOX */
+ul.features {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
 }
+
+/* Anular estilos de main.css que afectan features */
+.features {
+    display: grid !important;
+    -webkit-box-orient: unset !important;
+    -webkit-box-direction: unset !important;
+    flex-direction: unset !important;
+}
+
+.features li {
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* Resetear nth-child rules que interfieren */
+.features li:nth-child(1),
+.features li:nth-child(2),
+.features li:nth-child(3),
+.features li:nth-child(4),
+.features li:nth-child(5) {
+    margin-top: 0 !important;
+}
+
+/* Asegurar 5 columnas exactas en pantallas grandes */
+@media screen and (min-width: 981px) {
+    section#first ul.features,
+    section#internet-tv ul.features,
+    #first ul.features,
+    #internet-tv ul.features {
+        grid-template-columns: repeat(5, 1fr) !important;
+        display: grid !important;
+    }
+    
+    section#first ul.features > li,
+    section#internet-tv ul.features > li {
+        width: 100% !important;
+    }
+
 </style>
 		
 	
